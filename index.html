@@ -254,12 +254,32 @@
             font-weight: 600;
             margin: 10px 5px;
             transition: all 0.3s ease;
+            font-size: 1.1em;
         }
 
         .cta-button:hover {
             background: #764ba2;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .github-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .github-section h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .github-section p {
+            color: white;
+            margin-bottom: 20px;
+            opacity: 0.9;
         }
 
         @media (max-width: 768px) {
@@ -279,7 +299,7 @@
     <div class="container">
         <header>
             <h1>📊 Customer Shopping Behavior Analysis</h1>
-            <p class="subtitle">Python, SQL, Power BI | May 2025</p>
+            <p style="color: #764ba2; font-weight: 600; font-size: 1.1em; margin-top: 10px;">By: Abdul Khaliq</p>
             <div class="tech-stack">
                 <span class="tech-badge">🐍 Python</span>
                 <span class="tech-badge">🗄️ SQL</span>
@@ -381,16 +401,20 @@
             <h3>Product Categories</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
                 <div style="background: #667eea; color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                    <strong>Clothing</strong><br>1,737 purchases
+                    <strong style="font-size: 1.3em;">Clothing</strong><br>
+                    <span style="font-size: 1.1em;">1,737 purchases</span>
                 </div>
                 <div style="background: #764ba2; color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                    <strong>Footwear</strong>
+                    <strong style="font-size: 1.3em;">Footwear</strong><br>
+                    <span style="font-size: 1.1em;">975 purchases</span>
                 </div>
                 <div style="background: #f093fb; color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                    <strong>Accessories</strong>
+                    <strong style="font-size: 1.3em;">Accessories</strong><br>
+                    <span style="font-size: 1.1em;">658 purchases</span>
                 </div>
                 <div style="background: #f5576c; color: white; padding: 20px; border-radius: 10px; text-align: center;">
-                    <strong>Outerwear</strong>
+                    <strong style="font-size: 1.3em;">Outerwear</strong><br>
+                    <span style="font-size: 1.1em;">530 purchases</span>
                 </div>
             </div>
         </div>
@@ -583,31 +607,31 @@ GROUP BY customer_segment;
             </p>
 
             <div class="recommendation-card">
-                <h3 style="margin-top: 0; color: white;">1. 🎯 Targeted Marketing Campaigns</h3>
+                <h3 style="margin-top: 0; color: white;">🎯 Targeted Marketing Campaigns</h3>
                 <p><strong>Data Finding:</strong> Middle-aged customers (44-57 years) generate highest revenue; seasonal patterns show distinct category preferences.</p>
                 <p><strong>Action:</strong> Focus marketing budgets on high-revenue age demographics with season-specific campaigns. Personalize messaging based on historical purchase patterns and category preferences.</p>
             </div>
 
             <div class="recommendation-card">
-                <h3 style="margin-top: 0; color: white;">2. 📈 Customer Retention Strategy</h3>
+                <h3 style="margin-top: 0; color: white;">📈 Customer Retention Strategy</h3>
                 <p><strong>Data Finding:</strong> Subscribers show 35% higher lifetime value; loyal customers (10+ purchases) drive sustained revenue.</p>
                 <p><strong>Action:</strong> Implement tiered loyalty programs to convert returning customers into loyal segments. Offer subscription benefits including exclusive discounts, early access, and personalized recommendations.</p>
             </div>
 
             <div class="recommendation-card">
-                <h3 style="margin-top: 0; color: white;">3. 🛍️ Product Portfolio Optimization</h3>
+                <h3 style="margin-top: 0; color: white;">🛍️ Product Portfolio Optimization</h3>
                 <p><strong>Data Finding:</strong> Clothing dominates (44.5% of sales); top-rated products maintain 3.8-4.4 ratings; seasonal trends impact category performance.</p>
                 <p><strong>Action:</strong> Expand high-performing product lines. Feature top-rated items in marketing campaigns. Adjust inventory based on seasonal demand patterns to optimize stock levels and reduce holding costs.</p>
             </div>
 
             <div class="recommendation-card">
-                <h3 style="margin-top: 0; color: white;">4. 💰 Revenue Maximization Tactics</h3>
+                <h3 style="margin-top: 0; color: white;">💰 Revenue Maximization Tactics</h3>
                 <p><strong>Data Finding:</strong> Express shipping users spend 22% more; discount usage doesn't always reduce total purchase amount.</p>
                 <p><strong>Action:</strong> Promote express shipping to high-value customers. Implement smart discount strategies targeting customer segments likely to increase basket size, not just capture existing demand.</p>
             </div>
 
             <div class="recommendation-card">
-                <h3 style="margin-top: 0; color: white;">5. 🎨 Demographic-Specific Strategies</h3>
+                <h3 style="margin-top: 0; color: white;">🎨 Demographic-Specific Strategies</h3>
                 <p><strong>Data Finding:</strong> Distinct purchasing patterns across age groups, gender, and location; payment preferences vary by demographic.</p>
                 <p><strong>Action:</strong> Create demographic-specific marketing materials and product recommendations. Optimize payment options based on customer segment preferences to reduce cart abandonment.</p>
             </div>
@@ -628,8 +652,10 @@ GROUP BY customer_segment;
                 <li>20-25% increase in average order value via strategic upselling and cross-selling</li>
             </ul>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="https://github.com/Abdulkhaliq2004/customer-shopping-behavior-analysis" class="cta-button" target="_blank">📁 View Full Project on GitHub</a>
+            <div class="github-section">
+                <h3>View Complete Project</h3>
+                <p>Explore the full analysis including Python notebooks, SQL queries, and Power BI dashboards on GitHub</p>
+                <a href="https://github.com/Abdulkhaliq2004/customer-shopping-behavior-analysis" class="cta-button" target="_blank" style="background: white; color: #667eea;">View Full Project on GitHub</a>
             </div>
         </div>
     </div>
